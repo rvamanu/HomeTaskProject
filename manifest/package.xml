@@ -15,6 +15,14 @@
         <members>Display_Acc_With_Number_Of_Open_Inq</members>
         <name>Flow</name>
     </types>
+    <types>
+		<members>Custom_App</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Custom_Home_Page</members>
+		<name>FlexiPage</name>
+	</types>
 
     <version>58.0</version>
 </Package>
