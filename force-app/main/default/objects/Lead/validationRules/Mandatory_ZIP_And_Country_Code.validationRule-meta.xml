@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_ZIP_And_Country_Code</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+				ISBLANK(PostalCode) &amp;&amp; ISBLANK(Country), true,
+				
+IF( ISBLANK(Country), true,
+			
+IF( ISBLANK(PostalCode), true, false)))</errorConditionFormula>
+    <errorMessage>Please fill in the Postal Code and Country.</errorMessage>
+</ValidationRule>
